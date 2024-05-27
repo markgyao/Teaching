@@ -1,7 +1,7 @@
 Here are ten questions on finding probability using combinations and permutations, tailored for 8th-grade students. These questions cover a range of scenarios to help students understand and apply these concepts in different contexts.
 
 
-### Permutations and Combinations ###
+### Permutations and Combinations
 
 Q1: How many ways can 6 students be arranged in a line?
 Q2: How many ways can you choose 4 fruits from a basket containing 8 different fruits?
@@ -13,7 +13,6 @@ Q7: How many ways can you select a team of 4 people from a group of 10, where 2 
 Q8: How many ways can 4 students be seated in a row if two of the students, A and B, must sit next to each other?
 Q9: How many ways can you form a 3-digit number using the digits 1, 2, 3, 4, 5, 6, 7, 8, and 9 if repetition of digits is not allowed?
 Q10: In how many ways can you arrange 5 different books on a shelf if one particular book must always be in the middle?
-
 
 ### Probability with Combinations
 
