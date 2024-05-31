@@ -46,7 +46,7 @@ Q10: In how many ways can you arrange 5 different books on a shelf if one partic
         There are 6 black cards (3 spades + 3 black hearts).
         There are 6 red cards (3 diamonds + 3 red hearts).
             
-        Probability = C(6,3)*C(6,3)C(12,4) 
+        Probability = C(6,3)*C(6,3)/C(12,4) 
 3. **P(3/8H) get 3 heads with 8 throws of a coin**
    
     total number of possible outcomes of 8 tthrowing:$2^2=512$ 
