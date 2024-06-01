@@ -53,8 +53,12 @@ Q10: In how many ways can you arrange 5 different books on a shelf if one partic
     total number of possible outcomes of 8 with 3 heads: $C(8,3)$
     so answer is $P(3/8 heads)=C(8,3)/2^8$
     
-3. A card game using total 36 cards: 1-9 from each suits. A hand is a collection of 9 cards. What is is the probability of getting all four 1s in a hands
-   P(a hands with all 4 1s)=C(36-4,5)/C(36,9)
+4. **A card game using total 36 cards: 1-9 from each suits. A hand is a collection of 9 cards.  What is is the probability of getting all four 1s in a hands**
+   
+   $P(a hands with all 4 1s)=C(36-4,5)/C(36,9)$
+
+5. **A committee of 5 members is to be formed from a group of 7 men and 8 women. What is the probability that the committee will have exactly 3 men and 2 women?**
+   $P=C(7,3)*C(8,2)/C(15,5)$
 
 
 
@@ -131,7 +135,48 @@ $ ways).
 These questions and answers provide a comprehensive overview of how to apply combinations and permutations to probability problems, reinforcing the understanding of these mathematical concepts.
 
 
-### 4. Binomial Distirbution
+Here are five questions involving combinations and permutations with playing cards, each followed by detailed solutions to enhance understanding of these concepts:
+
+### robability with Combinations 3
+
+1. **Full House Draw**: What is the probability of drawing a full house (three cards of one rank and two cards of another rank) in a five-card hand from a standard deck?
+2. **Three Clubs in a Row**: If five cards are drawn from a deck, what is the probability that the first three cards are clubs?
+3. **Arranging Four Aces**: In how many different ways can the four aces be arranged in a row?
+4. **Two Pairs in Five Cards**: What is the probability of drawing exactly two pairs (two cards of one rank and two cards of another rank, plus a fifth card of a different rank) in a five-card hand?
+5. **Specific Suit Order**: If five cards are drawn one by one from a deck, what is the probability that they are drawn in ascending order of suits (assuming the order is clubs, diamonds, hearts, spades)?
+
+### Answers with Logic Steps
+
+#### 1. Full House Draw
+- **Total Outcomes**: The number of ways to choose any five cards from a deck, $ \binom{52}{5} $.
+- **Favorable Outcomes**: Choose a rank for the three cards ($13$), and choose three cards of that rank ($\binom{4}{3}$). Then, choose a different rank for the pair ($12$), and choose two cards of that rank ($\binom{4}{2}$).
+- **Probability**: $\frac{13 \times \binom{4}{3} \times 12 \times \binom{4}{2}}{\binom{52}{5}}$.
+
+#### 2. Three Clubs in a Row
+- **Total Outcomes**: The number of ways to draw any five cards in sequence, $52 \times 51 \times 50 \times 49 \times 48$.
+- **Favorable Outcomes**: The first three cards must be clubs ($13 \times 12 \times 11$), and the remaining two can be any cards ($39 \times 38$).
+- **Probability**: $\frac{13 \times 12 \times 11 \times 39 \times 38}{52 \times 51 \times 50 \times 49 \times 48}$.
+
+#### 3. Arranging Four Aces
+- **Total Outcomes**: Simply the number of permutations of four items, $4!$ (factorial of four).
+- **Probability**: Since this is a counting problem, the answer is $4! = 24$ different ways.
+
+#### 4. Two Pairs in Five Cards
+- **Total Outcomes**: The number of ways to choose any five cards, $ \binom{52}{5} $.
+- **Favorable Outcomes**: Choose two ranks for the pairs ($\binom{13}{2}$), and choose two cards for each of these ranks ($\binom{4}{2}^2$). Then, choose a different rank for the fifth card ($11$) and one card from that rank ($4$).
+- **Probability**: $\frac{\binom{13}{2} \times \binom{4}{2}^2 \times 11 \times 4}{\binom{52}{5}}$.
+
+#### 5. Specific Suit Order
+- **Total Outcomes**: The number of ways to draw any five cards in sequence, $52 \times 51 \times 50 \times 49 \times 48$.
+- **Favorable Outcomes**: Each card drawn must be from a succeeding suit, with fixed numbers from each suit (e.g., 1 club, then 1 diamond, then 1 heart, then 1 spade, and finally any suit). The specific count depends on the suit order chosen for calculation.
+- **Calculation**: Assume the most balanced distribution. The first card can be any of 13 clubs, the second any of 13 diamonds, and so on.
+- **Probability**: $\frac{13 \times 13 \times 13 \times 13 \times 13}{52 \times 51 \times 50 \times 49 \times 48}$.
+
+These questions and answers guide students through the processes of calculating probabilities and determining arrangements using playing cards, a tangible and familiar medium.ß
+
+
+
+### 5. Binomial Distirbution
 
 $$P(n,k)=C(n,k)*p^k*(1-p)^{n-k}$$
 
