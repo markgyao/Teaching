@@ -78,7 +78,7 @@
 	# Jupyter Notebook
 	.ipynb_checkpoints
 	# Save all notebooks before committing to avoid unnecessary conflicts
-	*.ipynb
+
 	
 	# environment files
 	.env
