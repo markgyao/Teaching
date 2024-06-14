@@ -131,7 +131,7 @@ $ ways).
 These questions and answers provide a comprehensive overview of how to apply combinations and permutations to probability problems, reinforcing the understanding of these mathematical concepts.
 
 
-### 4. Binomial Distirbution
+### 4. Binomial Probability  
 
 $$P(n,k)=C(n,k)*p^k*(1-p)^{n-k}$$
 
