@@ -1,0 +1,5 @@
+2024-08-13, food, Lunch at Joe's Diner, 12.5
+2024-08-12, transport, Uber ride to work, 18.0
+2024-08-11, entertainment, Movie ticket, 15.0
+2024-08-10, food, Grocery shopping, 45.3
+2024-08-09, transport, Gas for car, 30.0
