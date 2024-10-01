@@ -1,0 +1,260 @@
+**Introduction**
+
+Factoring polynomials is a fundamental skill in algebra that allows us to simplify expressions and solve polynomial equations. Two essential tools for factoring polynomials are the **Rational Root Theorem** and **synthetic division**. In this guide, we'll explore how to use these methods step-by-step with illustrative examples.
+
+---
+
+## Rational Root Theorem
+
+**Definition:**
+
+The Rational Root Theorem states that if a polynomial with integer coefficients has a rational root \( \frac{p}{q} \), then:
+
+- \( p \) is a factor of the constant term (the term without \( x \))
+- \( q \) is a factor of the leading coefficient (the coefficient of the highest power of \( x \))
+
+**Purpose:**
+
+This theorem helps us list all possible rational roots (zeros) of a polynomial equation, which we can then test to find the actual roots.
+
+---
+
+## Synthetic Division
+
+**Definition:**
+
+Synthetic division is a simplified form of polynomial division, particularly useful when dividing by a linear factor of the form \( x - c \). It allows us to evaluate polynomials efficiently and test potential roots.
+
+**Purpose:**
+
+- To test whether a candidate root is an actual root (remainder is zero)
+- To factor polynomials by dividing out known factors
+
+---
+
+## Step-by-Step Guide with Examples
+
+### **Example 1: Factor the polynomial \( f(x) = 2x^3 - 3x^2 - 8x + 12 \) using the Rational Root Theorem and synthetic division.**
+
+### **Step 1: Identify the coefficients**
+
+- Leading coefficient (\( a \)): 2
+- Constant term (\( d \)): 12
+
+### **Step 2: List the factors of the constant term and the leading coefficient**
+
+**Factors of the constant term (12):**
+
+\[ \pm1, \pm2, \pm3, \pm4, \pm6, \pm12 \]
+
+**Factors of the leading coefficient (2):**
+
+\[ \pm1, \pm2 \]
+
+### **Step 3: Write all possible rational roots \( \frac{p}{q} \)**
+
+Possible rational roots are all possible fractions formed by \( \frac{\text{factors of }d}{\text{factors of }a} \):
+
+\[ \pm\frac{1}{1}, \pm\frac{1}{2}, \pm\frac{2}{1}, \pm\frac{2}{2}, \pm\frac{3}{1}, \pm\frac{3}{2}, \pm\frac{4}{1}, \pm\frac{4}{2}, \pm\frac{6}{1}, \pm\frac{6}{2}, \pm\frac{12}{1}, \pm\frac{12}{2} \]
+
+Simplify the fractions:
+
+\[ \pm1, \pm\frac{1}{2}, \pm2, \pm3, \pm\frac{3}{2}, \pm4, \pm6, \pm12 \]
+
+### **Step 4: Test the possible roots using synthetic division**
+
+We'll test \( x = 2 \) as a potential root.
+
+#### **Synthetic Division Setup for \( x = 2 \)**
+
+1. **Write the coefficients:** 2, -3, -8, 12
+2. **Set up the synthetic division:**
+
+```
+      ___________________
+ 2 |  2    -3    -8    12
+```
+
+3. **Carry out the synthetic division:**
+
+- **Bring down the first coefficient:**
+
+  \( 2 \)
+
+- **Multiply and add step-by-step:**
+
+  - Multiply \( 2 \) (root) by \( 2 \) (current value), add to next coefficient:
+
+    \( 2 \times 2 = 4 \)
+
+    \( -3 + 4 = 1 \)
+
+  - Multiply \( 2 \) by \( 1 \), add to next coefficient:
+
+    \( 2 \times 1 = 2 \)
+
+    \( -8 + 2 = -6 \)
+
+  - Multiply \( 2 \) by \( -6 \), add to next coefficient:
+
+    \( 2 \times -6 = -12 \)
+
+    \( 12 + (-12) = 0 \)
+
+4. **Result of synthetic division:**
+
+```
+      ___________________
+ 2 |  2    -3    -8    12
+           4     2    -12
+       -------------------
+        2     1    -6     0
+```
+
+The remainder is 0, so \( x = 2 \) is a root.
+
+### **Step 5: Write the factored form using the root**
+
+Since \( x = 2 \) is a root, \( (x - 2) \) is a factor. The other factor comes from the coefficients obtained from synthetic division:
+
+\[ 2x^2 + 1x - 6 \]
+
+### **Step 6: Factor the quadratic**
+
+Now, factor \( 2x^2 + x - 6 \):
+
+1. **Multiply \( a \) and \( c \):**
+
+   \( 2 \times -6 = -12 \)
+
+2. **Find two numbers that multiply to -12 and add to \( b = 1 \):**
+
+   \( 4 \) and \( -3 \) (since \( 4 \times -3 = -12 \) and \( 4 + (-3) = 1 \))
+
+3. **Rewrite the quadratic:**
+
+   \( 2x^2 + 4x - 3x - 6 \)
+
+4. **Factor by grouping:**
+
+   - Group 1: \( (2x^2 + 4x) \)
+
+     Factor out \( 2x \):
+
+     \( 2x(x + 2) \)
+
+   - Group 2: \( (-3x - 6) \)
+
+     Factor out \( -3 \):
+
+     \( -3(x + 2) \)
+
+5. **Combine the groups:**
+
+   \( (2x - 3)(x + 2) \)
+
+### **Step 7: Write the fully factored form**
+
+Combine all factors:
+
+\[ f(x) = (x - 2)(2x - 3)(x + 2) \]
+
+---
+
+### **Example 2: Factor the polynomial \( f(x) = x^3 - 7x + 6 \).**
+
+### **Step 1: Identify the coefficients**
+
+- Leading coefficient (\( a \)): 1
+- Constant term (\( d \)): 6
+
+### **Step 2: List the factors of the constant term and the leading coefficient**
+
+**Factors of the constant term (6):**
+
+\[ \pm1, \pm2, \pm3, \pm6 \]
+
+**Factors of the leading coefficient (1):**
+
+\[ \pm1 \]
+
+### **Step 3: Write all possible rational roots \( \frac{p}{q} \)**
+
+Possible rational roots:
+
+\[ \pm1, \pm2, \pm3, \pm6 \]
+
+### **Step 4: Test the possible roots using synthetic division**
+
+We'll test \( x = 1 \).
+
+#### **Synthetic Division Setup for \( x = 1 \)**
+
+1. **Write the coefficients:** 1, 0, -7, 6
+
+   *(Note: There is no \( x^2 \) term, so we use 0 for its coefficient.)*
+
+2. **Set up the synthetic division:**
+
+```
+      ___________________
+ 1 |  1     0    -7     6
+```
+
+3. **Carry out the synthetic division:**
+
+- Bring down \( 1 \)
+- Multiply and add step-by-step:
+
+  - \( 1 \times 1 = 1 \); \( 0 + 1 = 1 \)
+  - \( 1 \times 1 = 1 \); \( -7 + 1 = -6 \)
+  - \( 1 \times -6 = -6 \); \( 6 + (-6) = 0 \)
+
+4. **Result:**
+
+```
+      ___________________
+ 1 |  1     0    -7     6
+           1     1    -6
+       --------------------
+        1     1    -6     0
+```
+
+The remainder is 0, so \( x = 1 \) is a root.
+
+### **Step 5: Write the factored form using the root**
+
+\[ f(x) = (x - 1)(x^2 + x - 6) \]
+
+### **Step 6: Factor the quadratic**
+
+Factor \( x^2 + x - 6 \):
+
+1. **Find two numbers that multiply to -6 and add to 1:**
+
+   \( 3 \) and \( -2 \)
+
+2. **Write the factors:**
+
+   \( (x + 3)(x - 2) \)
+
+### **Step 7: Write the fully factored form**
+
+\[ f(x) = (x - 1)(x + 3)(x - 2) \]
+
+---
+
+## Summary of Steps
+
+1. **Identify the polynomial's leading coefficient and constant term.**
+2. **List all factors of the constant term and the leading coefficient.**
+3. **Form all possible rational roots using \( \frac{p}{q} \).**
+4. **Use synthetic division to test each possible root until a root is found (remainder zero).**
+5. **Once a root is found, write the corresponding linear factor \( (x - c) \).**
+6. **Divide the original polynomial by \( (x - c) \) using synthetic division to obtain the depressed polynomial.**
+7. **Factor the depressed polynomial (if possible), using factoring techniques or repeat the Rational Root Theorem if necessary.**
+8. **Write the fully factored form of the polynomial.**
+
+---
+
+**Note:** Not all polynomials can be factored into rational factors using the Rational Root Theorem. Some polynomials have irrational or complex roots. In such cases, other methods like completing the square, quadratic formula, or numerical methods might be necessary.
