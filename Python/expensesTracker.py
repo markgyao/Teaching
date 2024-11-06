@@ -84,8 +84,9 @@ def view_plot_expense_pie_chart(expenses):
 def main():
     file_name = 'Python/expensesData.txt'
     expenses = load_expenses(file_name)
-    print(view_total_spending_with_category(expenses))
-    view_plot_expense_pie_chart(expenses)
+    # print(expenses)
+    # print(view_total_spending_with_category(expenses))
+    # view_plot_expense_pie_chart(expenses)
     while True:
         print("1. Add a new expense")
         print("2. View all expenses")
