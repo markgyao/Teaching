@@ -1,7 +1,7 @@
 // Define LED pins
-int ledPins[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+int ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 int numLEDs = sizeof(ledPins) / sizeof(ledPins[0]);
-
+String msg="";
 // Function pointer type for blink functions
 typedef void (*BlinkFunction)(int t);
 
@@ -34,6 +34,8 @@ BlinkFunction blinkFunctions[] = {
 int numPatterns = sizeof(blinkFunctions) / sizeof(blinkFunctions[0]);
 
 void setup() {
+  Serial.begin(9600);
+  Serial.println("setup ...");
   for (int i = 0; i < numLEDs; i++) {
     pinMode(ledPins[i], OUTPUT);
     digitalWrite(ledPins[i], LOW);
@@ -51,6 +53,8 @@ void loop() {
   // Loop through each blink function dynamically
   for (int i = 0; i < numPatterns; i++) {
     int patternNumber = i + 1;
+    msg = "blink_" + String(patternNumber);
+    Serial.println(msg);
     blink_start_signal(patternNumber, T_signal);
     for (int j = 0; j < pattern_repeat_num; j++) {
       // Call the blink function dynamically
